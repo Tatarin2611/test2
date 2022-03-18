@@ -86,23 +86,24 @@
                 Height="AUTO"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                TextAlignment="Center"
-                TextWrapping="Wrap"
                 FontFamily="/Project;component/ResourcesFolder/FontFamilyFolder/#Roboto Thin"
                 FontSize="14"
                 Foreground="White"
-                Opacity="0.6" />
+                Opacity="0.6"
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
         </Grid>
         <Button
             x:Name="ButtonCloseWindow"
             Width="30"
             Height="22"
+            Margin="0,0,-0,0"
             HorizontalAlignment="Right"
             VerticalAlignment="Top"
             pu:ButtonHelper.HoverBrush="#B44654"
             Background="Transparent"
             Click="ButtonClose_Click"
-            ToolTip="Закрыть" Margin="0,0,-0,0">
+            ToolTip="Закрыть">
             <materialDesign:PackIcon Kind="Close" Opacity="1" />
         </Button>
     </Grid>

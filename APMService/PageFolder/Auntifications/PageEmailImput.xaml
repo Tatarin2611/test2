@@ -19,7 +19,7 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Source="/ResourcesFolder/Image/Logotip.png" />
-        <StackPanel Orientation="Vertical" x:Name="StackPanelAnimation">
+        <StackPanel x:Name="StackPanelAnimation" Orientation="Vertical">
             <Label
                 x:Name="LabelHeade2r"
                 Height="40"

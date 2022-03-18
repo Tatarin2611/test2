@@ -2,9 +2,9 @@
     x:Class="APMService.PageFolder.AdministratorRole.PageEquipment"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Silver="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:APMService.PageFolder.AdministratorRole"
-     xmlns:Silver="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
@@ -233,7 +233,6 @@
                                         <TextBlock
                                             FontFamily="/Project;component/ResourcesFolder/FontFamily/#Roboto Light"
                                             Foreground="White"
-                                            
                                             Opacity="0.7"
                                             Text="{Binding IdEquipment}" />
                                         <!--  Text="{Binding LoginUsers, StringFormat=Пароль\{0\}}" />  -->
@@ -246,7 +245,6 @@
                                         <TextBlock
                                             FontFamily="/Project;component/ResourcesFolder/FontFamily/#Roboto Light"
                                             Foreground="White"
-                                            
                                             Opacity="0.7"
                                             Text="{Binding SeriaEquipment}" />
                                         <!--  Text="{Binding LoginUsers, StringFormat=Пароль\{0\}}" />  -->

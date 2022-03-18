@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:APMService.WindowFolder.AdministratorRole.Edit"
-   xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
     Title="MessageBoxStyle"
@@ -18,18 +18,23 @@
     mc:Ignorable="d">
 
     <Grid>
-        <Grid Height="25" HorizontalAlignment="Stretch" MouseDown="Grid_MouseDown" VerticalAlignment="Top" Background="#FF1C1C1C">
-            <Button
-            x:Name="ButtonCloseWindow"
-            Width="30"
-            Height="22"
-            Margin="0,-0,0,0"
-            HorizontalAlignment="Right"
+        <Grid
+            Height="25"
+            HorizontalAlignment="Stretch"
             VerticalAlignment="Top"
-            pu:ButtonHelper.HoverBrush="#B44654"
-            Background="Transparent"
-            Click="ButtonCancel_Click"
-            ToolTip="Закрыть">
+            Background="#FF1C1C1C"
+            MouseDown="Grid_MouseDown">
+            <Button
+                x:Name="ButtonCloseWindow"
+                Width="30"
+                Height="22"
+                Margin="0,-0,0,0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                pu:ButtonHelper.HoverBrush="#B44654"
+                Background="Transparent"
+                Click="ButtonCancel_Click"
+                ToolTip="Закрыть">
                 <materialDesign:PackIcon Kind="Close" Opacity="1" />
             </Button>
         </Grid>
@@ -59,12 +64,12 @@
             <TextBlock
                 Height="15"
                 Margin="0,15,0,0"
+                Padding="60,0,0,0"
                 FontFamily="/Project;component/ResourcesFolder/FontFamily/#Roboto Thin"
                 FontSize="12"
                 Foreground="White"
                 Opacity="0.4"
                 TextAlignment="Left"
-                Padding="60 0 0 0"
                 TextWrapping="Wrap"><Run Text=" Статус:" /></TextBlock>
             <ComboBox
                 x:Name="ComboBoxEquipment"
